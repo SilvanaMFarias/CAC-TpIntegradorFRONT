@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+  margin: 0;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+header{
+  background-color: #353a40;
+  height: 90px;
+}
+
+#section-oradores{
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+#section-contenido{
+  height: auto;
+  width: 100%;
+  background-color: #353a40;
+  color: white;
+}
+
+
+footer{
+  height: auto;
+  background: rgb(28,54,67);
+  background: linear-gradient(90deg, rgba(28,54,67,1) 0%, rgba(30,68,91,1) 79%, rgba(29,82,113,1) 100%);
+  height: 70px;
+  display: flex;
+  align-items: center;
+}
+
+#nav-footer{
+  width: 65%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: small;
+}
+
+
+#nav-footer a{
+  text-decoration: none;
+  color: white;
+}
