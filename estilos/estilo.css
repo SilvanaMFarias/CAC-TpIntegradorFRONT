@@ -63,9 +63,9 @@ div.container{
   color: white;
 }
 
-/* #carrousel-imagenes-main{
-  top: -85px;
-  z-index: -1;
+/* .carousel-item {
+  height: 115vh;
+  background-size: cover;
 } */
 
 #div-texto-carrousel{
@@ -74,14 +74,15 @@ div.container{
   flex-direction: column;
   text-align: right;
   margin-left: 55%;
-  top: 200px;
-  /* margin-right: 35px; */
+  top: 300px;
   color: white;
   width: 40%;
 }
 
 #carrousel-imagenes-main img{
   filter: brightness(0.6);
+  object-fit: cover;
+  height: 95vh;
 }
 
 #section-oradores{

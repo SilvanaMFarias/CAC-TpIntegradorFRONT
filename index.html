@@ -10,15 +10,15 @@
 </head>
 
 <body>
-  <header>
+  <header class="sticky-top">
     <div class="row" id="row-header">
-        <div class="col-4" id="container-header-logo">
+        <div class="col-4 id="container-header-logo">
           <a href="https://buenosaires.gob.ar/educacion/codo-codo-40"><img src="./imagenes/logocodoacodo.webp" id="logo" alt="logo codo a codo"></a>
           <a class="navbar-brand" href="#">Conf Bs As</a>
         </div>
         <div class="col" id="container-header-links">
           <nav class="navbar navbar-expand-lg navbar-dark bg-tranparent">
-            <div class="container">
+            <div class="container-fluid">
               <div class="collapse navbar-collapse" style="justify-content: right;">
                 <div class="navbar-nav">
                   <a class="nav-link active" aria-current="page" href="#">La Conferencia</a>
@@ -32,7 +32,13 @@
           </nav>
         </div>
     </div>
+    <!-- <nav class="navbar sticky-top navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Sticky top</a>
+      </div>
+    </nav> -->
   </header>
+
 
 
   <main>
@@ -49,12 +55,14 @@
         </div>
       </div>
     </div>
-    <div id="div-texto-carrousel">
-      <h3>Conf Bs As</h3>
-      <p>Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que están creando el futuro de Internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
-      <div>
-        <a href="#section-formulario-oradores"><button class="btn btn-outline-light">Quiero ser orador</button></a>
-        <button class="btn btn-success">Comprar Tickets</button>
+    <div class="card bg-transparent" id="div-texto-carrousel">
+      <div class="card-body">
+        <h3 class="card-title">Conf Bs As</h3>
+        <p class="card-text align-text-left">Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que están creando el futuro de Internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
+        <div>
+          <a href="#section-formulario-oradores"><button class="btn btn-outline-light">Quiero ser orador</button></a>
+          <button class="btn btn-success">Comprar Tickets</button>
+        </div>
       </div>
     </div>
   </main>
@@ -69,14 +77,14 @@
       <div class="col">
         <div class="card">
           <img src="./imagenes/steve.jpg" class="card-img-top" alt="Steve Jobs">
-        <div class="card-body">
-          <div>
-            <span class="badge bg-warning">Java Script</span>
-            <span class="badge bg-info">React</span>
+          <div class="card-body">
+            <div>
+              <span class="badge bg-warning">Java Script</span>
+              <span class="badge bg-info">React</span>
+            </div>
+            <h5 class="card-title">Steve Jobs</h5>
+            <p class="card-text texto-pequenio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit dolorem voluptates in nisi, voluptas quidem aspernatur accusamus fugiat illo eligendi non fugit asperiores iste maiores amet, temporibus unde neque eos?</p>
           </div>
-          <h5 class="card-title">Steve Jobs</h5>
-          <p class="card-text texto-pequenio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit dolorem voluptates in nisi, voluptas quidem aspernatur accusamus fugiat illo eligendi non fugit asperiores iste maiores amet, temporibus unde neque eos?</p>
-        </div>
         </div>
       </div>
       <div class="col">
@@ -95,14 +103,14 @@
       <div class="col">
         <div class="card">
           <img src="./imagenes/ada.jpeg" class="card-img-top" alt="Ada Lovelace">
-        <div class="card-body">
-          <div>
-            <span class="badge bg-secondary">Negocios</span>
-            <span class="badge bg-danger">Startups</span>
+          <div class="card-body">
+            <div>
+              <span class="badge bg-secondary">Negocios</span>
+              <span class="badge bg-danger">Startups</span>
+            </div>
+            <h5 class="card-title">Ada Lovelace</h5>
+            <p class="card-text texto-pequenio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, optio at aspernatur, et repudiandae molestias id rerum expedita dicta quibusdam quidem nulla laborum! Sapiente rerum illum, minus ipsum assumenda expedita?</p>
           </div>
-          <h5 class="card-title">Ada Lovelace</h5>
-          <p class="card-text texto-pequenio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, optio at aspernatur, et repudiandae molestias id rerum expedita dicta quibusdam quidem nulla laborum! Sapiente rerum illum, minus ipsum assumenda expedita?</p>
-        </div>
         </div>
       </div>
     </div>
