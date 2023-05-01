@@ -13,9 +13,10 @@
   --color-verde-lima: #96c93e;
 }
 
+
 header{
   background-color: var(--color-gris);
-  height: 80px;
+  height: 85px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -62,19 +63,35 @@ div.container{
   color: white;
 }
 
+#carrousel-imagenes-main img{
+  filter: brightness(0.6);
+}
+
 #section-oradores{
   width: 70%;
   margin: 10px auto 25px auto;
 }
 
-#section-oradores-titulos{
+#section-oradores-titulos, #section-formulario-oradores-titulos{
   text-align: center;
 }
 
-#section-oradores-titulos p{
+#section-oradores-titulos p, #section-formulario-oradores-titulos p{
+  margin: 0;
+}
+
+.texto-pequenio{
+  font-size: smaller;
+}
+
+.texto-fino{
   font-size: smaller;
   font-weight: 300;
-  margin-bottom: 0;
+}
+
+#section-formulario-oradores{
+  margin-top: 20px;
+  margin-bottom: 15px;
 }
 
 #section-contenido{
@@ -93,11 +110,8 @@ div.container{
 
 #section-contenido-texto{
   padding-top: 15px;
-
   color: white;
 }
-
-
 
 footer{
   height: auto;
@@ -112,7 +126,7 @@ footer{
   width: 65%;
   margin-left: auto;
   margin-right: auto;
-  font-size: small;
+  font-size: smaller;
 }
 
 
@@ -124,3 +138,4 @@ footer{
 a.navbar-brand:hover{
   color: white;
 }
+

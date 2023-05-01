@@ -13,7 +13,7 @@
   <header>
     <div class="row" id="row-header">
         <div class="col-4" id="container-header-logo">
-          <img src="./imagenes/logocodoacodo.webp" id="logo" alt="logo codo a codo">
+          <a href="https://buenosaires.gob.ar/educacion/codo-codo-40"><img src="./imagenes/logocodoacodo.webp" id="logo" alt="logo codo a codo"></a>
           <a class="navbar-brand" href="#">Conf Bs As</a>
         </div>
         <div class="col" id="container-header-links">
@@ -22,9 +22,9 @@
               <div class="collapse navbar-collapse" style="justify-content: right;">
                 <div class="navbar-nav">
                   <a class="nav-link active" aria-current="page" href="#">La Conferencia</a>
-                    <a class="nav-link" href="#">Los oradores</a>
+                    <a class="nav-link" href="#section-oradores">Los oradores</a>
                     <a class="nav-link" href="#">El lugar y la fecha</a>
-                    <a class="nav-link" href="#">Conviértete en orador</a>
+                    <a class="nav-link" href="#section-formulario-oradores">Conviértete en orador</a>
                     <a class="nav-link" id="tickets" href="#">Comprar tickets</a>
                 </div>
               </div>
@@ -36,7 +36,7 @@
 
 
   <main>
-    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+    <div id="carrousel-imagenes-main" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
           <img src="./imagenes/ba1.jpg" class="d-block w-100" alt="Imagen Buenos Aires">
@@ -53,7 +53,7 @@
 
   <section id="section-oradores">
     <div id="section-oradores-titulos">
-      <p>CONOCE A LOS</p>
+      <p class="texto-fino">CONOCE A LOS</p>
       <h4>ORADORES</h4>
     </div>
 
@@ -67,7 +67,7 @@
             <span class="badge bg-info">React</span>
           </div>
           <h5 class="card-title">Steve Jobs</h5>
-          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit dolorem voluptates in nisi, voluptas quidem aspernatur accusamus fugiat illo eligendi non fugit asperiores iste maiores amet, temporibus unde neque eos?</p>
+          <p class="card-text texto-pequenio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit dolorem voluptates in nisi, voluptas quidem aspernatur accusamus fugiat illo eligendi non fugit asperiores iste maiores amet, temporibus unde neque eos?</p>
         </div>
         </div>
       </div>
@@ -80,7 +80,7 @@
               <span class="badge bg-info">React</span>
             </div>
             <h5 class="card-title">Bill Gates</h5>
-            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat unde voluptatibus ullam at expedita nihil facere laborum omnis sunt? Sequi reprehenderit ut impedit amet ipsum aut quo iure. Fugiat, laborum?</p>
+            <p class="card-text texto-pequenio">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat unde voluptatibus ullam at expedita nihil facere laborum omnis sunt? Sequi reprehenderit ut impedit amet ipsum aut quo iure. Fugiat, laborum?</p>
           </div>
         </div>
       </div>
@@ -93,7 +93,7 @@
             <span class="badge bg-danger">Startups</span>
           </div>
           <h5 class="card-title">Ada Lovelace</h5>
-          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, optio at aspernatur, et repudiandae molestias id rerum expedita dicta quibusdam quidem nulla laborum! Sapiente rerum illum, minus ipsum assumenda expedita?</p>
+          <p class="card-text texto-pequenio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, optio at aspernatur, et repudiandae molestias id rerum expedita dicta quibusdam quidem nulla laborum! Sapiente rerum illum, minus ipsum assumenda expedita?</p>
         </div>
         </div>
       </div>
@@ -108,11 +108,49 @@
       </div>
       <div class="col" id="section-contenido-texto">
         <h5>Bs As - Octubre</h5>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam similique explicabo, nesciunt adipisci reiciendis fugit corporis unde praesentium voluptatem excepturi ex ad at, dolor impedit harum, necessitatibus veniam sapiente! Voluptatem?</p>
+        <p>Buenos Aires es la provincia y la localidad más grande del estado de Argentina, en los Estados Unidos. Honolulu es la más sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al área urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu han formado una ciudad-condado consolidada que cubre toda la ciudad (aproximadamente 600 km<sup>2</sup> de superficie) </p>
         <button type="button" class="btn btn-outline-light btn-sm">Conocé más</button>
       </div>
     </div>
   </div>
+</section>
+
+<section id="section-formulario-oradores">
+  <div id="section-formulario-oradores-titulos">
+    <p class="texto-fino">CONVIÉRTETE EN UN </p>
+    <h4>ORADOR</h4>
+    <p>Anotate como orador para dar una charla ignite. Cuéntanos de que quieres hablar!</p>
+  </div>
+  <br>
+  <form>
+    <div class="row">
+      <div class="offset-3 col-3">
+        <input type="text" class="form-control" placeholder="Nombre" id="nombre-form">
+      </div>
+      <div class="col-3">
+        <input type="text" class="form-control" placeholder="Apellido" id="apellido-form">
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-6 offset-3">
+        <textarea class="form-control" rows="5" id="asunto-form" placeholder="¿Sobre qué quieres hablar?"></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-6 offset-3">
+        <p class="texto-pequenio">Recuerda incluir un título para tu charla</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-6 offset-3">
+        <div class="d-grid">
+          <button type="submit" class="btn btn-success">Enviar</button>
+        </div>
+      </div>
+    </div>
+    
+  </form>
 </section>
 
 <footer>
