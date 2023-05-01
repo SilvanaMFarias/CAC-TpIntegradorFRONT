@@ -63,6 +63,23 @@ div.container{
   color: white;
 }
 
+/* #carrousel-imagenes-main{
+  top: -85px;
+  z-index: -1;
+} */
+
+#div-texto-carrousel{
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  text-align: right;
+  margin-left: 55%;
+  top: 200px;
+  /* margin-right: 35px; */
+  color: white;
+  width: 40%;
+}
+
 #carrousel-imagenes-main img{
   filter: brightness(0.6);
 }
