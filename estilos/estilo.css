@@ -63,11 +63,6 @@ div.container{
   color: white;
 }
 
-/* .carousel-item {
-  height: 115vh;
-  background-size: cover;
-} */
-
 #div-texto-carrousel{
   display: flex;
   position: absolute;
