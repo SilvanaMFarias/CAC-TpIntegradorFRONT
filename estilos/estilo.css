@@ -80,7 +80,7 @@ div.container{
 }
 
 #carrousel-imagenes-main img{
-  filter: brightness(0.6);
+  filter: brightness(0.5);
   object-fit: cover;
   height: 95vh;
 }
